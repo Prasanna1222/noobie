@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}
+    </title>
+    <link rel="stylesheet" href="/static/CSS/Style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="master">
+        <body></body>
+            <div class="navbar">
+                <div class="contain">
+                    <a href="#" class="loge">CHEEMS<span>PETS</span>
+                      <svg width="34" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.35 3.00003C9.53 2.83003 10.78 4.12003 11.14 5.90003C11.5 7.67003 10.85 9.25003 9.67 9.43003C8.5 9.61003 7.24 8.32003 6.87 6.54003C6.5 4.77003 7.17 3.19003 8.35 3.00003ZM15.5 3.00003C16.69 3.19003 17.35 4.77003 17 6.54003C16.62 8.32003 15.37 9.61003 14.19 9.43003C13 9.25003 12.35 7.67003 12.72 5.90003C13.08 4.12003 14.33 2.83003 15.5 3.00003ZM3 7.60003C4.14 7.11003 5.69 8.00003 6.5 9.55003C7.26 11.13 7 12.79 5.87 13.28C4.74 13.77 3.2 12.89 2.41 11.32C1.62 9.75003 1.9 8.08003 3 7.60003ZM21 7.60003C22.1 8.08003 22.38 9.75003 21.59 11.32C20.8 12.89 19.26 13.77 18.13 13.28C17 12.79 16.74 11.13 17.5 9.55003C18.31 8.00003 19.86 7.11003 21 7.60003ZM19.33 18.38C19.37 19.32 18.65 20.36 17.79 20.75C16 21.57 13.88 19.87 11.89 19.87C9.9 19.87 7.76 21.64 6 20.75C5 20.26 4.31 18.96 4.44 17.88C4.62 16.39 6.41 15.59 7.47 14.5C8.88 13.09 9.88 10.44 11.89 10.44C13.89 10.44 14.95 13.05 16.3 14.5C17.41 15.72 19.26 16.75 19.33 18.38Z" fill="black"/>
+                        </svg></a>
+                   
+                 
+                     
+                        <svg class="menu" id="menu" width="48" height="32" viewBox="0 0 48 32" fill="none" onclick="msg()" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 32H0V26.6667H24V32ZM48 18.6667H0V13.3333H48V18.6667ZM48 5.33333H24V0H48V5.33333Z" fill="white"/>
+                            </svg>
+                    <nav>
+                      <svg class="close" id="close" width="45" height="32" viewBox="0 0 671 671" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.2 19.2C31.2018 7.20185 47.4775 0.46167 64.448 0.46167C81.4185 0.46167 97.6942 7.20185 109.696 19.2L336 245.504L562.304 19.2C574.375 7.54188 590.541 1.09104 607.322 1.23686C624.102 1.38268 640.154 8.11349 652.02 19.9796C663.887 31.8457 670.617 47.8977 670.763 64.6783C670.909 81.4589 664.458 97.6255 652.8 109.696L426.496 336L652.8 562.304C664.458 574.375 670.909 590.541 670.763 607.322C670.617 624.102 663.887 640.154 652.02 652.02C640.154 663.887 624.102 670.617 607.322 670.763C590.541 670.909 574.375 664.458 562.304 652.8L336 426.496L109.696 652.8C97.6255 664.458 81.4589 670.909 64.6783 670.763C47.8977 670.617 31.8457 663.887 19.9796 652.02C8.11349 640.154 1.38268 624.102 1.23686 607.322C1.09104 590.541 7.54188 574.375 19.2 562.304L245.504 336L19.2 109.696C7.20185 97.6942 0.46167 81.4185 0.46167 64.448C0.46167 47.4775 7.20185 31.2018 19.2 19.2Z" fill="black"/>
+                        </svg>
+                         
+                                      
+                        <ul class="prime">
+        
+                        <li class="crt">
+                        <a href="{% url 'FRONT' %}">Home</a></li> 
+                        <li class="crt"><a href="#">Contact</a></li>
+                        <li><a href="#">Review</a></li>
+                        <li><a href="#">'Go'Premium</a></li>
+                        </ul>
+                    </div>
+                    
+        
+                </nav>
+                </div>
+            </div>
+            <script>
+                const mobilebut = document.getElementById('menu')
+                nav = document.querySelector('nav')
+                mobileexit = document.getElementById("close");
+              
+                mobilebut.addEventListener("click",() => {
+                  nav.classList.add('menu')
+              
+                })
+              
+                mobileexit.addEventListener("click",() => {
+                  nav.classList.remove('menu')
+              
+                })
+              </script>
+
+    <center>
+        <div id="d1">
+
+        {% block content %}
+        <h1>Welcome {{ request.session.User_name }}
+            Find Your Companion
+        </h1>
+<table>
+    <tr>
+        <th>Breedname</th>
+        <th>color</th>
+        <th>Gender</th>
+        <th>Availabe</th>
+    </tr>
+    {% for i in record %}
+        <tr>
+            <td>{{i.breedname}}</td>
+            <td>{{i.color}}</td>
+            <td>{{i.Gender}}</td>
+            {% if i.status == 1 %}
+                <td>AVAILABE</td>
+            {% else %}   
+                <td>NOT AVAILABE</td>
+            {% endif %}
+            <td><a href='#'>BUY</a></td>
+
+        </tr>
+    {% endfor %}
+    </table>
+
+
+
+
+        {% endblock %}
+        </div>
+    </center>
+    </div>
+    
+</body>
+</html>

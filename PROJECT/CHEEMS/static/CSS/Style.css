@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&family=Roboto:ital,wght@1,500&display=swap");
+:root {
+  --primary-color:#1E649C;
+}
+
+body {
+  background-color:whitesmoke;
+  margin: 0;
+  font-family: "Poppins";
+}
+img{
+  width:75%;
+}
+
+.navbar {
+  background:dimgrey;
+  padding: 1em;
+}
+
+.loge {
+  text-decoration: none;
+  font-weight: bolder;
+  color:goldenrod;
+  font-size: 1.5em;
+}
+
+span {
+  color: white;
+}
+nav{
+  display: none;
+}
+.contain{
+  display: flex;
+  place-content: space-between;
+
+}
+.menu{
+  cursor: pointer;
+}
+a{
+
+}
+ul{
+  list-style-type: none;
+}
+section{
+  padding: 5em 2em;
+}
+.hero{
+  text-align: center;
+}
+.main{
+
+  .subhead{
+    letter-spacing: .2em;
+    color: royalblue;
+    font-weight: bold;
+
+  }
+
+  .head{
+    font-size: 2.5em;
+    line-height: 1.3em;
+    color: goldenrod;
+  }
+
+
+}
+.butt{
+  background-color:midnightblue;
+  color: white;
+  padding: .7em 1.5em;
+  letter-spacing: .1em;
+  border-radius: 5em;
+  display: inline-block;
+
+
+}
+.butt svg{
+  transition: transform .3s;
+}
+.butt2{
+  background-color:midnightblue;
+  
+  padding: .7em 1.5em;
+  letter-spacing: .1em;
+  border-radius: 5em;
+  display: inline;
+
+}
+.butt2 svg{
+  transition: transform .3s;
+}
+.butt:hover{
+  background-color: #1E649C;
+
+}
+.butt:hover svg{
+  transform: translateX(10px);  
+}
+.butt2:hover{
+  background-color: #1E649C;
+
+}
+.butt2:hover svg{
+  transform: translateX(10px);  
+}
+h2{
+  font-size: 2em;
+
+}
+label{
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: .4em;
+}
+input,textarea{
+  width: 100%;
+  padding: .5em;
+  border-radius: 2em;
+
+}
+input[type="Submit"]{
+  color: antiquewhite;
+  background-color: black;
+  font-family:Poppins;
+  cursor: pointer;
+  border: none;
+  margin-top: .3em;
+}
+nav{
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background-color:lightslategray;
+  height: 100vh;
+  padding: 1em;
+
+}
+  nav .prime {
+    margin-top: 5em;
+  }
+  nav li {
+    list-style-type: none;
+  }
+  nav li a {
+    right: 0;
+    color: whitesmoke;
+    text-decoration: none;
+    display: block;
+    padding: 0.5em;
+    font-size: 1.3em;
+    text-align: right;
+  }
+  nav li a:HOVER {
+    font-size: 25px;
+    background-color: goldenrod;
+    border-radius: 3em;
+    
+  }
+  
+  .close {
+    top: 0;
+    left: 0;
+    float: left;
+    margin: 2em;
+    width: 1.2em;
+    cursor: pointer;
+  }
+
+.menu{
+  display: block;
+}
+.testimonials-section {
+  background: goldenrod;
+  color: white;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .menu, .close {
+    display: none;
+  }
+  .navbar{
+    display: grid;
+  }
+  ul.prime{
+    margin:0;
+  }
+  ul.secon{
+    margin:0;
+  }
+  .navbar nav {
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul {
+    display: flex;
+  }
+  .navbar nav ul a {
+    color: black;
+    font-size: 1em;
+    padding: 0.1em 1em;
+  }
+  .navbar nav ul a:hover {
+    background-color: goldenrod;
+    font-size: larger;
+  }
+.demo{
+  letter-spacing: .2em;
+  color: royalblue;
+  font-weight: bold;
+
+}
+.testimonials-section ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.testimonials-section ul li {
+  margin: 0 1em;
+}

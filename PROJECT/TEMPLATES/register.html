@@ -1,0 +1,77 @@
+{% extends "Master.html" %}
+{% block title %}
+Registration Page
+{% endblock %}
+{% block content %}
+
+{% if messages %}
+{% for m in messages %}
+<div class="alert alert-{{m.tags}}" role="alert">
+    {{m}}
+</div>
+{% endfor %}
+{% endif %}
+<head>
+    <style>
+        .avatar {
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	overflow: hidden;
+	top: calc(-80px/2);
+	left: 190px;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+body:before {
+	content: '';
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-image: url('/static/images/taylor-sondgeroth-ltsKOg_q_Gc-unsplash.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+	-webkit-filter: blur(10px);
+	-moz-filter: blur(10px);
+	filter: blur(10px);
+    z-index: -1;
+}
+h1{
+	margin: 0;
+	padding: 0 0 20px;
+	color: goldenrod;
+	text-align: center;
+	text-transform: uppercase;
+}
+input[type=submit] {
+	height: 30px;
+	color: #fff;
+	font-size: 15px;
+	background: goldenrod;
+	cursor: pointer;
+	border-radius: 25px;
+	border: none;
+	outline: none;
+	margin-top: 10%;
+}
+    </style>
+    
+</head>
+<center>
+<form action="registerAction" method="post">
+    <h1>Register User</h1>    {% csrf_token %}
+    <table>
+        {{ form.as_table }}
+        <tr>
+            <td><input type="reset" value="Clear"></td>
+            <td><input type="submit" value="Register"></td>
+        </tr>
+    </table>
+    </form>
+{% endblock %}

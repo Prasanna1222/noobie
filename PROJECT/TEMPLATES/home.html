@@ -1,0 +1,124 @@
+{% extends "Master.html" %}
+{% block title %}
+Home Page
+{% endblock %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <style>
+.testimonials-section li {
+  background: goldenrod;
+  text-align: center;
+  padding: 2em 1em;
+  width: 80%;
+  margin: 0 auto 5em auto;
+  border-radius: 1em;
+}
+
+.testimonials-section li img {
+  width: 5em;
+  height: 5em;
+  border: 5px solid #006BD6;
+  border-radius: 50%;
+  margin-top: -4.5em;
+}
+    </style>
+</head>
+<section class="hero">
+      <div class="main">
+        <p class="subhead">
+          DOGS LEAVES PAWPRINTS ON OUR HEARTS
+          <svg width="34" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.35 3.00003C9.53 2.83003 10.78 4.12003 11.14 5.90003C11.5 7.67003 10.85 9.25003 9.67 9.43003C8.5 9.61003 7.24 8.32003 6.87 6.54003C6.5 4.77003 7.17 3.19003 8.35 3.00003ZM15.5 3.00003C16.69 3.19003 17.35 4.77003 17 6.54003C16.62 8.32003 15.37 9.61003 14.19 9.43003C13 9.25003 12.35 7.67003 12.72 5.90003C13.08 4.12003 14.33 2.83003 15.5 3.00003ZM3 7.60003C4.14 7.11003 5.69 8.00003 6.5 9.55003C7.26 11.13 7 12.79 5.87 13.28C4.74 13.77 3.2 12.89 2.41 11.32C1.62 9.75003 1.9 8.08003 3 7.60003ZM21 7.60003C22.1 8.08003 22.38 9.75003 21.59 11.32C20.8 12.89 19.26 13.77 18.13 13.28C17 12.79 16.74 11.13 17.5 9.55003C18.31 8.00003 19.86 7.11003 21 7.60003ZM19.33 18.38C19.37 19.32 18.65 20.36 17.79 20.75C16 21.57 13.88 19.87 11.89 19.87C9.9 19.87 7.76 21.64 6 20.75C5 20.26 4.31 18.96 4.44 17.88C4.62 16.39 6.41 15.59 7.47 14.5C8.88 13.09 9.88 10.44 11.89 10.44C13.89 10.44 14.95 13.05 16.3 14.5C17.41 15.72 19.26 16.75 19.33 18.38Z" fill="black"/>
+            </svg>
+            
+
+
+        </p>
+        
+        <h1 class="head">DOGS ARE THE GOD OF FROLIC</h1>
+      </div>
+
+      <div class="butt">
+        <a href="{% url 'Login' %}" class="sec" style="text-decoration: none; color:aliceblue;">Browse DOGS
+          <svg width="19" height="19" viewBox="0 0 392 744" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.86401 9.31207C3.28178 15.0271 0.156616 22.6991 0.156616 30.6881C0.156616 38.677 3.28178 46.349 8.86401 52.0641L320.736 372L8.86401 691.872C3.28178 697.587 0.156616 705.259 0.156616 713.248C0.156616 721.237 3.28178 728.909 8.86401 734.624C11.5774 737.411 14.8215 739.626 18.4049 741.138C21.9884 742.651 25.8385 743.43 29.728 743.43C33.6175 743.43 37.4676 742.651 41.0511 741.138C44.6345 739.626 47.8787 737.411 50.592 734.624L382.24 394.336C388.065 388.36 391.325 380.345 391.325 372C391.325 363.655 388.065 355.64 382.24 349.664L50.592 9.37608C47.8787 6.5893 44.6345 4.37433 41.0511 2.86192C37.4676 1.34951 33.6175 0.570312 29.728 0.570312C25.8385 0.570312 21.9884 1.34951 18.4049 2.86192C14.8215 4.37433 11.5774 6.5893 8.86401 9.37608V9.31207Z" fill="black"/>
+            </svg>
+        </a>
+      </div>
+      <div class="butt2">
+        <a href="{% url 'Login' %}" class="sec2" style="text-decoration: none; color:aliceblue;">
+          Sell DOGS
+          <svg width="19" height="19" viewBox="0 0 392 744" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.86401 9.31207C3.28178 15.0271 0.156616 22.6991 0.156616 30.6881C0.156616 38.677 3.28178 46.349 8.86401 52.0641L320.736 372L8.86401 691.872C3.28178 697.587 0.156616 705.259 0.156616 713.248C0.156616 721.237 3.28178 728.909 8.86401 734.624C11.5774 737.411 14.8215 739.626 18.4049 741.138C21.9884 742.651 25.8385 743.43 29.728 743.43C33.6175 743.43 37.4676 742.651 41.0511 741.138C44.6345 739.626 47.8787 737.411 50.592 734.624L382.24 394.336C388.065 388.36 391.325 380.345 391.325 372C391.325 363.655 388.065 355.64 382.24 349.664L50.592 9.37608C47.8787 6.5893 44.6345 4.37433 41.0511 2.86192C37.4676 1.34951 33.6175 0.570312 29.728 0.570312C25.8385 0.570312 21.9884 1.34951 18.4049 2.86192C14.8215 4.37433 11.5774 6.5893 8.86401 9.37608V9.31207Z" fill="black"/>
+            </svg>
+            </a>
+      </div>
+      
+      <div class="img1">
+        <img style="height:500px; width: 500px;" src="/static/images/karsten-winegeart-oU6KZTXhuvk-unsplash.jpg"  alt="">
+      </div>
+      <h2 class="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+      <div class="img2">
+        <img style="height:500px; width: 500px;" src="/static/images/karsten-winegeart-j5z0DZMWViU-unsplash.jpg" alt="">
+      </div>
+    </section>
+    <h1>Reviews</h1>
+    
+    <section class="testimonials-section">
+      <div class="container">
+          <ul>
+              <li>
+                  <img src="/static/images/charlesdeluvio-K4mSJ7kc0As-unsplash.jpg" alt="Person">
+
+                  <blockquote>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore"</blockquote>
+                  <cite>~King</cite>
+              </li>
+              <li>
+                  <img src="/static/images/michael-dam-mEZ3PoFGs_k-unsplash.jpg" alt="Person">
+
+                  <blockquote>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore"</blockquote>
+                  <cite>~queen</cite>
+              </li>
+              <li>
+                  <img src="/static/images/christian-buehner-DItYlc26zVI-unsplash.jpg" alt="Person">
+
+                  <blockquote>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore"</blockquote>
+                  <cite>~Stan</cite>
+              </li>
+          </ul>
+      </div>
+  </section>
+          <div class="contactright">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.1734944313985!2d78.11715311451167!3d9.919504492906377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c58461e46987%3A0xf134621ce5286703!2sMeenakshi%20Amman%20Temple!5e0!3m2!1sen!2sin!4v1678773007762!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+      </div>
+
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</section>
+<script>
+  const mobilebut = document.getElementById('menu')
+  nav = document.querySelector('nav')
+  mobileexit = document.getElementById("close");
+
+  mobilebut.addEventListener("click",() => {
+    nav.classList.add('menu')
+
+  })
+
+  mobileexit.addEventListener("click",() => {
+    nav.classList.remove('menu')
+
+  })
+</script>    
+</body>
+</html>
+
+{% endblock %}

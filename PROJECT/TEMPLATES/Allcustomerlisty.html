@@ -1,0 +1,77 @@
+{% extends "AdminMasterTemplate.html" %}
+{% block title %}
+Admin Home
+{% endblock %}
+{% block content %}
+<h1>Customer List</h1>
+
+{% if messages %}
+    {% for m in messages %}
+    <div class="alert alert-{{m.tags}}" role="alert">
+        {{m}}
+      </div>
+    {% endfor %}
+{% endif %}
+<style>
+    h1{
+	margin: 0;
+	padding: 0 0 20px;
+	color: goldenrod;
+	text-align: center;
+	text-transform: uppercase;
+}
+    #customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+</style>
+</style>
+<table id="customers">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Mail</th>
+        <th>Mobile</th>
+        <th>Gender</th>
+        <th>Status</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+    {% for i in record %}
+        <tr>
+            <td>{{i.id}}</td>
+            <td>{{i.name}}</td>
+            <td>{{i.mail}}</td>
+            <td>{{i.mobile}}</td>
+            <td>{{i.Gender}}</td>
+            {% if i.status == 1 %}
+                <td>Active</td>
+            {% else %}   
+                <td>Deactive</td>
+            {% endif %}
+            <td><a href="{% url 'modifyAction' %}?id={{i.id}}&&status=1">Edit</a></td>
+            <td><a href="{% url 'modifyAction' %}?id={{i.id}}&&status=2">Delete</a></td>
+        </tr>
+    {% endfor %}
+    </table>
+{% endblock %}
+
+
